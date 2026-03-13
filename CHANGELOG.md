@@ -2,6 +2,19 @@
 
 All notable changes to Bags Play CLI are documented here.
 
+## v0.0.25
+
+### Added
+- **CLI**: All commands now use type-safe hono/client RPC — full end-to-end type inference from API route schemas, replacing the previous generic untyped HTTP client.
+- **CLI**: `bags init` now includes an embedded template fallback so compiled binaries work correctly without filesystem access to template sources.
+- **CLI**: `bags init` project scaffold now generates Cursor rules, skills, and MCP config; Claude rules, skills, and `CLAUDE.md`.
+- **SDK**: New `./app-utils` sub-path export for lightweight consumers that need app validation/serialization without the full engine dependency.
+- **npm**: `@bagsfm/play-shared`, `@bagsfm/play-engine`, `@bagsfm/play-sdk`, `@bagsfm/play-plugins`, and `@bagsfm/play-cli` are now published to the `@bagsfm` npm registry on each release.
+
+### Changed
+- **CLI**: Builder and loader utilities now import from `@bagsfm/play-sdk/app-utils` instead of the full SDK barrel, reducing compiled binary size.
+- **CLI**: Template files renamed to `.tmpl` extension to prevent TypeScript from attempting to compile them as source files.
+
 ## v0.0.24
 
 ### Added
