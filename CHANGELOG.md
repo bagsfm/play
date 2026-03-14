@@ -2,6 +2,11 @@
 
 All notable changes to Bags Play CLI are documented here.
 
+## v0.0.27
+
+### Fixed
+- `bags init` scaffolded projects can now install dependencies successfully. Published SDK packages at 0.0.26 had incorrect internal dependency versions.
+
 ## v0.0.26
 
 Internal improvements and bug fixes.
