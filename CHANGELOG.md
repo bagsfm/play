@@ -2,6 +2,23 @@
 
 All notable changes to Bags Play CLI are documented here.
 
+## v0.0.28
+
+### Added
+- **Plugin system**: Register, manage, and use third-party plugin packages in your automations. Plugins extend what your apps can do beyond the built-in actions.
+- **Secrets management**: Store encrypted API keys and private values that plugins can access at runtime — never hardcode sensitive data in your app definitions.
+- **`bags plugins` commands**: List, register, unregister, enable, and disable plugins from the CLI.
+- **`bags secrets` commands**: Create, list, update, and delete encrypted secrets from the CLI.
+- **`bags init --type plugin`**: Scaffold a new plugin package with typed action boilerplate, test harness, and tsconfig — ready to publish and register.
+- **Typed action builders in SDK**: `createAction()` factory gives you IDE autocomplete when configuring actions in app definitions. `.config()` on `ActionNodeBuilder` now accepts typed values with full inference.
+- **Plugin config helpers in SDK**: `createConfigAccessor()` for reading resolved plugin config in action handlers. `createPluginManifest()` for declaring your plugin's metadata and config requirements when registering.
+- **`@bagsfm/play-core-plugin`**: Core actions (log, HTTP request, transform, set-variable, state, events) are now a standalone published package.
+- **`@bagsfm/play-bags-plugin`**: Bags API actions (token info, holders, unclaimed fees, claim fees) are now a standalone published package.
+
+### Changed
+- Apps now validate that all referenced plugins exist and are enabled before a run begins — you get a clear error immediately rather than a mid-run failure.
+- Deployments accept an optional `pluginConfig` binding that maps plugin IDs to config values or secret references, so each deployment can use different credentials for the same plugin.
+
 ## v0.0.27
 
 ### Fixed
