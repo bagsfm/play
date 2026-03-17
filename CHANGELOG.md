@@ -2,6 +2,16 @@
 
 All notable changes to Bags Play CLI are documented here.
 
+## v0.0.33
+
+### Added
+- **CLI**: `bags deployments` command group — list, get, pause, and unpause your deployments with rich table output.
+- **CLI**: `bags runs` command group — list, get, trigger, cancel runs, and tail live logs directly from the terminal.
+- **SDK**: `createOptionalPluginConfigAccessor` — new SDK helper for plugin authors. Use this when your plugin config is fully optional (all fields have defaults); it falls back to schema defaults when no deployment config is bound instead of failing.
+
+### Fixed
+- Zod v4 compatibility: env parsers now use `z.flattenError()` instead of the removed `result.error.flatten()` method.
+
 ## v0.0.32
 
 Internal improvements and bug fixes.
