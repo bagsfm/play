@@ -2,6 +2,17 @@
 
 All notable changes to Bags Play CLI are documented here.
 
+## v0.0.34
+
+### Added
+- **CLI**: Every command and subcommand now includes an "Examples:" section in `--help` output with practical, copy-paste usage examples.
+- **CLI**: Parent command help pages (e.g. `bags deployments --help`, `bags runs --help`) now list their subcommands inline with argument signatures and descriptions — no more guessing what's available.
+- **CLI**: `bags --help` root page now shows a curated "Examples:" section for the most common workflows.
+
+### Changed
+- **CLI**: Help output for nested subcommands now shows the full command path in the "Usage:" line (e.g. `bags deployments list [flags]` instead of just `list [flags]`).
+- **CLI**: `--no-color` flag is honoured immediately on startup, before any color output is produced.
+
 ## v0.0.33
 
 ### Added
