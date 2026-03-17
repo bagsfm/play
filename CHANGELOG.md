@@ -2,6 +2,10 @@
 
 All notable changes to Bags Play CLI are documented here.
 
+## v0.0.30
+
+Internal improvements and bug fixes.
+
 ## v0.0.29
 
 Internal improvements and bug fixes.
