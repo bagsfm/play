@@ -2,6 +2,19 @@
 
 All notable changes to Bags Play CLI are documented here.
 
+## v0.0.35
+
+### Added
+- `bags completion` command generates shell completions for bash, zsh, and fish — auto-configured during installation.
+- `bags runs fees` command shows fee details for monetized app runs.
+- `bags init` now verifies tool version compatibility before scaffolding.
+- Custom `play_api` and `bags_api` URL overrides can be set in `bags.toml` for pointing the CLI at non-default API endpoints.
+- Monetization-aware secrets: the CLI now handles integrated secrets for monetized plugin configurations.
+- **SDK**: Plugin authors can declare per-action fee requirements using `fee()` in the action manifest builder.
+
+### Changed
+- Internal CLI metadata and constants centralized for consistency across all commands.
+
 ## v0.0.34
 
 ### Added
