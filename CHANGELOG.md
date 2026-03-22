@@ -2,6 +2,17 @@
 
 All notable changes to Bags Play CLI are documented here.
 
+## v0.0.36
+
+### Added
+- **SDK**: App DAG and expression validation aligned with the latest engine rules — catch structural and expression issues when authoring apps locally.
+- **SDK**: New and expanded documentation — getting started, expressions, plugins, validation, and composition/presets (see package docs).
+- **SDK**: Richer TSDoc across modules with improved type links and examples.
+
+### Changed
+- **CLI**: Fee amounts use clearer formatting in command output.
+- **CLI**: `bags init --type plugin` scaffolds plugin templates that include the plugin runtime version field expected by the platform.
+
 ## v0.0.35
 
 ### Added
