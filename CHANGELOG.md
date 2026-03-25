@@ -2,6 +2,12 @@
 
 All notable changes to Bags Play CLI are documented here.
 
+## v0.0.38
+
+### Changed
+- **CLI**: The `bags` standalone binary is built with bytecode, and the entrypoint avoids top-level `await` so compilation stays reliable across targets.
+- **SDK**: Published npm packages now use a bundled JavaScript build with separate `.d.ts` emit (via the workspace npm build script), for more predictable installs when you depend on `@bagsfm/play-sdk` from npm.
+
 ## v0.0.37
 
 Internal improvements and bug fixes.
