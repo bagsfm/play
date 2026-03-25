@@ -2,6 +2,11 @@
 
 All notable changes to Bags Play CLI are documented here.
 
+## v0.0.39
+
+### Fixed
+- **SDK**: npm packaging for published packages — prepack/postpack steps and export maps so installs from npm resolve entry points and TypeScript declarations reliably when you depend on `@bagsfm/play-sdk` and related packages.
+
 ## v0.0.38
 
 ### Changed
