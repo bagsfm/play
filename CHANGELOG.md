@@ -2,6 +2,18 @@
 
 All notable changes to Bags Play CLI are documented here.
 
+## v0.0.40
+
+### Added
+- **CLI**: `bags` commands now support `--json` machine-readable output, making scripting and CI automation easier.
+- **CLI**: `bags init` now scaffolds projects against the shared `play-skills` library so generated guidance stays aligned with the latest Bags Play workflow.
+
+### Changed
+- **SDK**: App trigger and reference validation now align with the current manual, cron, webhook, and event trigger unions, giving earlier author-time feedback.
+
+### Fixed
+- **SDK**: Published npm packages now point TypeScript type exports at the built `dist` declarations, improving resolution for npm consumers.
+
 ## v0.0.39
 
 ### Fixed
